@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 1127px;
+  background-color: white;
+  color: #333; /* Màu chữ mặc định */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.logo img {
+  max-width: 100px;
+}
+
+.search-bar input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  height: 25px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  height: 35px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info span {
+  margin-right: 10px;
+}
+
+#login-btn {
+  padding: 5px 10px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.user-info span {
+  margin-right: 10px;
+  font-size: 14px; /* Thay đổi kích thước chữ thành nhỏ hơn */
+}
+
+#current-date {
+  margin-right: 20px; /* Khoảng cách giữa ngày tháng và vị trí */
+}
