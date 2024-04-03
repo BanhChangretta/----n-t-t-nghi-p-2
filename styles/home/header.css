@@ -65,3 +65,36 @@ header {
 #current-date {
   margin-right: 20px; /* Khoảng cách giữa ngày tháng và vị trí */
 }
+
+.header-wrapper {
+  width: 1127px;
+  margin: 0 auto; /* Để căn giữa header và menu */
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center; /* Căn giữa menu */
+}
+
+.menu li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu li :hover {
+  color: #555;
+}
+
+.divider {
+  height: 1px; /* Chiều cao của dòng kẻ */
+  background-color: #ccc; /* Màu của dòng kẻ */
+  margin-top: 20px; /* Khoảng cách giữa menu và dòng kẻ */
+  margin-bottom: 30px;
+}

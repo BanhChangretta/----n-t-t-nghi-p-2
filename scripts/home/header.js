@@ -18,3 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
       }
   });
 });
+
+
+// Lắng nghe sự kiện cuộn chuột
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('header');
+    if (window.pageYOffset > 100) {
+        // Khi cuộn xuống một khoảng cách cụ thể, thêm lớp "scrolled" vào header
+        header.classList.add('scrolled');
+    } else {
+        // Nếu không, loại bỏ lớp "scrolled"
+        header.classList.remove('scrolled');
+    }
+});
