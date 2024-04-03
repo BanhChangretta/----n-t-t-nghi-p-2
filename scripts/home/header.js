@@ -20,14 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Lắng nghe sự kiện cuộn chuột
 window.addEventListener('scroll', function() {
-    var header = document.querySelector('header');
-    if (window.pageYOffset > 100) {
-        // Khi cuộn xuống một khoảng cách cụ thể, thêm lớp "scrolled" vào header
-        header.classList.add('scrolled');
+    var menu = document.getElementById('menu');
+    var content = document.getElementById('content');
+    
+    if (window.scrollY > 0) {
+        menu.classList.add('fixed');
+        content.style.paddingTop = menu.offsetHeight + 'px'; // Đảm bảo nội dung không bị che bởi menu
     } else {
-        // Nếu không, loại bỏ lớp "scrolled"
-        header.classList.remove('scrolled');
+        menu.classList.remove('fixed');
+        content.style.paddingTop = '0';
     }
 });
+

@@ -72,24 +72,35 @@ header {
 }
 
 .menu {
+  width: 1903px;
+  display: flex;
   list-style-type: none;
   padding: 0;
   margin: 0;
+  background-color: #ffffff; /* Màu nền của menu */
+  justify-content: center;
+}
+
+.center-menu {
   text-align: center; /* Căn giữa menu */
+
 }
 
 .menu li {
-  display: inline;
   margin-right: 20px;
 }
 
 .menu li a {
   text-decoration: none;
+  display: block;
   color: #333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
 }
 
 .menu li :hover {
-  color: #555;
+  background-color: rgb(217, 216, 168);
 }
 
 .divider {
@@ -97,4 +108,20 @@ header {
   background-color: #ccc; /* Màu của dòng kẻ */
   margin-top: 20px; /* Khoảng cách giữa menu và dòng kẻ */
   margin-bottom: 30px;
+}
+
+#menu li {
+  display: block;
+  width: 130px;
+  height: 38px;
+  margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
 }
