@@ -3,18 +3,56 @@
   justify-content: center; /* Căn giữa theo chiều ngang */
 }
 
+.body-wrapper a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+.body-wrapper a :hover {
+  color: rgb(9, 137, 176);
+}
+
+h2 :hover{
+  color: rgb(9, 137, 176);
+}
+
+img {
+  cursor: pointer;
+}
+
+.right-column .large-article a p {
+  font-weight: normal;
+}
+
 .left-column {
   width: 234px;
+  padding-right: 20px;
+}
+
+.right-column-2 {
+  padding-left: 20px;
+  border-left: 1px solid rgb(224, 220, 220);
 }
 
 .right-column {
-  margin-left: 20px;
+  padding-right: 20px;
+  border-left: 1px solid rgb(224, 220, 220);
+}
+
+
+.left-column-article-top {
+  border-bottom: 1px solid rgb(224, 220, 220);
 }
 
 .article {
   width: 100%;
   height: 257px; /* Đã tính cả margin và padding */
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.article-bottom {
+  margin-top: 25px;
 }
 
 .large-article {
@@ -24,15 +62,34 @@
   margin-bottom: 20px;
 }
 
-.small-article {
-  width: 300px;
-  height: 80px; /* Đã tính cả margin và padding */
-  margin-bottom: 20px;
+.large-article img {
+  max-width: 100%;
 }
 
-.article img,
-.large-article img,
+.small-article {
+  width: 100%;
+  height: auto; /* Đảm bảo chiều cao tự động thích hợp */
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
 .small-article img {
+  width: 120px;
+  height: 80px;
+  margin-left: 20px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+.small-article .content {
+  flex: 1; /* Nội dung sẽ mở rộng để điền vào phần còn trống */
+}
+
+.small-article h2 {
+  width: 163px;
+  height: 80px;
+  margin: 0; /* Loại bỏ margin mặc định */
+}
+
+.article img {
   width: 233.98px;
   height: 155.98px;
 }
@@ -49,3 +106,23 @@
   background-color: #ccc;
   margin-top: 30px; /* Khoảng cách giữa menu và body */
 }
+
+.small-article .content {
+  width: 163.98px;
+  height: 80px;
+}
+
+.small-article .content a p {
+  margin: 0;
+}
+
+
+.padding-bottom {
+  padding-bottom: 25px;
+  border-bottom: 1px solid gray;
+}
+
+.padding-top {
+  padding-top: 25px;
+}
+
