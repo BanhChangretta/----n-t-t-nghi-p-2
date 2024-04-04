@@ -241,9 +241,11 @@ div.title span {
   height: 2000px; /* Độ cao của mỗi layout */
 }
 
+
+
 .layout1 {
-  padding-right: 37.5px;
-  margin-right: 37.5px;
+  padding-right: 30.5px;
+  margin-right: 30.5px;
   border-right: 1px solid #ccc;
 }
 
@@ -318,4 +320,138 @@ div.title span {
   display: flex;
   flex-direction: column; /* Các phần tử sẽ được xếp dọc */
   justify-content: space-between; /* Các phần tử sẽ được căn đều với khoảng cách giữa chúng */
+}
+
+.layout2 .right-layout1 {
+  width: 527px;
+  height: 315px;
+  margin-top: 10px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.category-header {
+  padding: 10px 0;
+}
+
+.category-header a {
+  text-decoration: none;
+  color: #333333;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.category-header .main {
+  text-decoration: none;
+  color: #1c8e0d;
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.layout2 .right-layout1 .article1 {
+  padding-right: 15px;
+  border-right: 1px solid #ccc;
+}
+
+.layout2 .right-layout1 .article1 img {
+  width: 192px;
+  height: 127.99px;
+}
+
+.article-content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Xếp các phần tử vào các cột với độ rộng tối thiểu 200px */
+  grid-gap: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+.article-content a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.wrapper2 :hover {
+  color: rgb(9, 137, 176);
+}
+
+.layout2 .article1 {
+  width: 192px;
+  height: 315px;
+}
+
+.layout2 .right-layout1 .title {
+  display: block;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.826);
+  width: 192px;
+  height: 65.99px;
+  font-size: 15px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+.layout2 .right-layout1 .content {
+  display: block;
+  color: #666666;
+  width: 192px;
+  height: 80px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+.right-layout2 .article2 {
+  width: 319px;
+  height: 60px;
+}
+
+.right-layout2 .article2 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc; /* Đường kẻ phân chia giữa các article */
+  padding-bottom: 12px;
+}
+
+.right-layout2 .article2 img {
+  margin-left: 10px;
+  width: 90px;
+  height: 60px;
+}
+
+.right-layout2 .article2 h3 {
+  width: 217px;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  cursor: pointer;
+  color: #333333;
+}
+
+
+
+.right-layout2 {
+  flex: 1;
+  width: 319px;
+  margin-left: 10px;
+}
+
+.right-layout2 .article-last {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.right-layout2 .article2 h3 {
+  /* CSS mặc định cho tiêu đề */
+  transition: color 0.3s ease; /* Hiệu ứng màu khi hover */
+}
+
+.right-layout2 .article2 h3:hover {
+  color: rgb(9, 137, 176); /* Màu chữ khi hover */
 }
