@@ -6,7 +6,7 @@
 .body-wrapper a {
   text-decoration: none;
   font-weight: 600;
-  color: black;
+  color: rgba(0, 0, 0, 0.826);
 }
 
 .body-wrapper a :hover {
@@ -207,7 +207,7 @@ div.title span {
 .wrapper a {
   text-decoration: none;
   font-weight: 600;
-  color: black;
+  color: rgba(0, 0, 0, 0.826);
 }
 
 .wrapper :hover {
@@ -230,7 +230,7 @@ div.title span {
   width: 1127px;
   display: flex;
   margin: auto;
-  margin-top: 30px; /* Khoảng cách giữa các layout */
+  margin-top: 40px; /* Khoảng cách giữa các layout */
   padding-top: 30px;
   border-top: 1px solid #ccc;
 }
@@ -247,3 +247,75 @@ div.title span {
   border-right: 1px solid #ccc;
 }
 
+
+.left-layout1{
+  width: 527px;
+  height: 156px;
+}
+
+.left-layout1 {
+  display: flex;
+  align-items: center;
+}
+
+.left-layout1 .article {
+  display: flex;
+  align-items: center;
+}
+
+.left-layout1 img {
+  width: 234px;
+  height: 156px;
+}
+
+.left-layout1 .content {
+  margin-left: 20px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+.left-layout1 .content a {
+  display: block;
+  text-decoration: none;
+}
+
+.left-layout1 h3 {
+  width: 277px;
+  height: 75px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.left-layout1 p {
+  width: 277px;
+  height: 66px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+
+.body-layout {
+  border: none;
+
+}
+
+.left-layout1 article {
+  height: 177px;
+  padding-top: 30px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.wrapper2 a {
+  color: rgba(0, 0, 0, 0.826);
+}
+
+
+.layout1 {
+  display: flex;
+  flex-direction: column; /* Các phần tử sẽ được xếp dọc */
+  justify-content: space-between; /* Các phần tử sẽ được căn đều với khoảng cách giữa chúng */
+}
