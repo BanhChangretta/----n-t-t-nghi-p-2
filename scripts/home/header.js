@@ -33,3 +33,17 @@ window.addEventListener('scroll', function() {
     }
 });
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const menuItems = document.querySelectorAll('.menu li');
+  
+    menuItems.forEach(function(item) {
+      item.addEventListener('mouseenter', function() {
+        this.classList.add('active');
+      });
+  
+      item.addEventListener('mouseleave', function() {
+        this.classList.remove('active');
+      });
+    });
+  });

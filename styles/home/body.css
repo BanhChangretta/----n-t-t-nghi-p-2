@@ -533,3 +533,10 @@ label {
   gap: 10px; /* Khoảng cách giữa các liên kết */
 }
 
+.footer-dowload {
+  padding-top: 20px;
+}
+
+.footer-mxh {
+  padding-top: 20px;
+}
