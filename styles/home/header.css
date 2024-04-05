@@ -15,6 +15,22 @@ header {
   margin: auto;
 }
 
+.logo {
+  display: flex;
+}
+
+.weather {
+  margin-left: 20px;
+}
+
+.weather span {
+  margin-right: 10px;
+}
+
+.weather #weather-icon {
+  font-size: 20px;
+}
+
 .logo img {
   max-width: 100px;
 }
@@ -82,8 +98,7 @@ header {
 }
 
 .center-menu {
-  text-align: center; /* Căn giữa menu */
-
+  text-align: center; 
 }
 
 .menu li {
@@ -99,8 +114,8 @@ header {
   border-radius: 8px;
 }
 
-.menu li :hover {
-  background-color: rgb(217, 216, 168);
+.menu .menu-item :hover {
+  background-color: rgb(216, 212, 205);
 }
 
 .divider {
@@ -145,14 +160,14 @@ header {
 .submenu {
   display: none;
   position: absolute;
-  top: calc(100% + 15px); /* Thêm khoảng cách giữa menu và submenu */
+  top: calc(100% + 13px); /* Thêm khoảng cách giữa menu và submenu */
   left: 0;
   background-color: #fff;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Đổ bóng cho submenu */
   opacity: 1;
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Tạo hiệu ứng mượt mà */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Tạo hiệu ứng mượt mà */
   transform: translateY(-10px); /* Đẩy submenu lên trên để ẩn */
   cursor: pointer;
   width: 300px;
@@ -175,12 +190,12 @@ header {
 }
 
 .submenu ul li{
-  justify-content: left !important;
+  text-align: left!important;
   display: inline;
 }
 
 .menu-element:hover{
-  background-color: red !important;
+  background-color: rgb(2, 122, 24) !important;
   padding-left: 30px;
 }
 

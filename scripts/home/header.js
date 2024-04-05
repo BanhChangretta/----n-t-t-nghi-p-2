@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', function() {
           // Perform logout actions
       }
   });
+
+
+  // Giả định lấy nhiệt độ và icon thời tiết từ API
+  const temperature = '25°C';
+  const weatherIcon = 'fas fa-cloud-sun';
+  temperatureElement.textContent = temperature;
+  document.getElementById('weather-icon').innerHTML = `<i class="${weatherIcon}"></i>`;
 });
 
 

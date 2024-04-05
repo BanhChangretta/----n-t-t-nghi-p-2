@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Website</title>
     <link rel="stylesheet" href="styles/home/header.css">
@@ -11,16 +13,20 @@
     <header>
         <div class="logo">
             <img src="images/Logo_Dan_Tri.png" alt="Logo">
+
+            <div class="weather">
+                <span id="temperature"></span>
+                <span id="weather-icon"><i class="fas fa-sun"></i></span>
+            </div>
         </div>
         <div class="search-bar">
             <input type="text" placeholder="Tìm kiếm...">
-            <button>Tìm</button>
+            <button><i class="fas fa-search"></i></i></button>
         </div>
         <div class="user-info">
             <span id="user-location">Hà Nội</span>
             <span id="current-date"></span>
             <button id="login-btn">Đăng nhập</button>
-            <a href=""><i class="fa-regular fa-circle-user"></i></a>
         </div>
     </header>
 
@@ -29,7 +35,7 @@
             <li class="menu-item ClassHome"><a href="#home">Home</a></li>
 
             <li class="menu-item">
-                <a href="#thegioi">Thế giới</a>
+                <a class="menu-hover" href="#thegioi">Thế giới</a>
 
                 <div class="submenu">
                   <ul>
@@ -41,18 +47,54 @@
                 </div>
             </li>
 
-            <li class="menu-item"><a href="#xahoi">Xã hội</a>
+            <li class="menu-item">
+                <a class="menu-hover" href="#xahoi">Xã hội</a>
+
                 <div class="submenu">
                     <ul>
-                      <li class="menu-element"><a href="#quansu">Quân sự</a></li>
-                      <li class="menu-element"><a href="#phantichbinhluan">Phân tích bình luận</a></li>
-                      <li class="menu-element"><a href="#thegioidoday">Thế giới đó dây</a></li>
-                      <li class="menu-element"><a href="#kieubao">Kiều bào</a></li>
+                      <li class="menu-element"><a href="#chinhtri">Chính trị</a></li>
+                      <li class="menu-element"><a href="#hoctapbac">Học tập Bác</a></li>
+                      <li class="menu-element"><a href="#khatvonghungcuong">Khát vọng hùng cường</a></li>
+                      <li class="menu-element"><a href="#moitruong">Môi trường</a></li>
+                      <li class="menu-element"><a href="#giaothong">Giao thông</a></li>
+                      <li class="menu-element"><a href="#nongtrenmang">Nóng trên mạng</a></li>
+                      <li class="menu-element"><a href="#antoangiaothong">An toàn giao thông</a></li>
+                      
                     </ul>
                 </div>
             </li>
 
-            <li class="menu-item"><a href="#vanhoa">Văn hóa</a>
+            <li class="menu-item">
+                <a class="menu-hover" href="#vanhoa">Văn hóa</a>
+
+                <div class="submenu">
+                    <ul>
+                      <li class="menu-element"><a href="#sachhay">Sách hay</a></li>
+                      <li class="menu-element"><a href="#doisongvanhoa">Đời sống văn hóa</a></li>
+                      <li class="menu-element"><a href="#dienanh">Điện ảnh</a></li>
+                      <li class="menu-element"><a href="#amnhac">Âm nhạc</a></li>
+                      <li class="menu-element"><a href="#hatgiongtamhon">Hạt giống tâm hồn</a></li>
+                    </ul>
+                  </div>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-hover" href="#kinhte">Kinh tế</a>
+
+                <div class="submenu">
+                    <ul>
+                      <li class="menu-element"><a href="#taichinh">Tài chính</a></li>
+                      <li class="menu-element"><a href="#chungkhoan">Chứng khoán</a></li>
+                      <li class="menu-element"><a href="#doanhnghiep">Doanh nghiệp</a></li>
+                      <li class="menu-element"><a href="#tieudung">Tiêu dùng</a></li>
+                      <li class="menu-element"><a href="#tietkiemdien">Tiết kiệm điện</a></li>
+                    </ul>
+                  </div>
+            </li>
+
+            <li class="menu-item">
+                <a class="menu-hover" href="#giaoduc">Giáo dục</a>
+
                 <div class="submenu">
                     <ul>
                       <li class="menu-element"><a href="#quansu">Quân sự</a></li>
@@ -63,46 +105,28 @@
                   </div>
             </li>
 
-            <li class="menu-item"><a href="#kinhte">Kinh tế</a>
+            <li class="menu-item">
+                <a class="menu-hover" href="#thethao">Thể thao</a>
+
                 <div class="submenu">
                     <ul>
-                      <li class="menu-element"><a href="#quansu">Quân sự</a></li>
-                      <li class="menu-element"><a href="#phantichbinhluan">Phân tích bình luận</a></li>
-                      <li class="menu-element"><a href="#thegioidoday">Thế giới đó dây</a></li>
-                      <li class="menu-element"><a href="#kieubao">Kiều bào</a></li>
+                      <li class="menu-element"><a href="#gocphuhuynh">Góc phụ huynh</a></li>
+                      <li class="menu-element"><a href="#khuyenhoc">Khuyến học</a></li>
+                      <li class="menu-element"><a href="#guongsang">Gương sáng</a></li>
+                      <li class="menu-element"><a href="#giaoducnghenghiep">Giáo dục-nghề nghiệp</a></li>
+                      <li class="menu-element"><a href="#duhoc">Du học</a></li>
+                      <li class="menu-element"><a href="#tuyensinh">Tuyển sinh</a></li>
                     </ul>
                   </div>
             </li>
 
-            <li class="menu-item"><a href="#giaoduc">Giáo dục</a>
+            <li class="menu-item">
+                <a class="menu-hover" href="#gaitri">Giải trí</a>
                 <div class="submenu">
                     <ul>
-                      <li class="menu-element"><a href="#quansu">Quân sự</a></li>
-                      <li class="menu-element"><a href="#phantichbinhluan">Phân tích bình luận</a></li>
-                      <li class="menu-element"><a href="#thegioidoday">Thế giới đó dây</a></li>
-                      <li class="menu-element"><a href="#kieubao">Kiều bào</a></li>
-                    </ul>
-                  </div>
-            </li>
-
-            <li class="menu-item"><a href="#thethao">Thể thao</a>
-                <div class="submenu">
-                    <ul>
-                      <li class="menu-element"><a href="#quansu">Quân sự</a></li>
-                      <li class="menu-element"><a href="#phantichbinhluan">Phân tích bình luận</a></li>
-                      <li class="menu-element"><a href="#thegioidoday">Thế giới đó dây</a></li>
-                      <li class="menu-element"><a href="#kieubao">Kiều bào</a></li>
-                    </ul>
-                  </div>
-            </li>
-
-            <li class="menu-item"><a href="#gaitri">Giải trí</a>
-                <div class="submenu">
-                    <ul>
-                      <li class="menu-element"><a href="#quansu">Quân sự</a></li>
-                      <li class="menu-element"><a href="#phantichbinhluan">Phân tích bình luận</a></li>
-                      <li class="menu-element"><a href="#thegioidoday">Thế giới đó dây</a></li>
-                      <li class="menu-element"><a href="#kieubao">Kiều bào</a></li>
+                      <li class="menu-element"><a href="#hautruong">Hậu trường</a></li>
+                      <li class="menu-element"><a href="#thoitrang">Thời trang</a></li>
+                      <li class="menu-element"><a href="#tvshow">TvShow</a></li>
                     </ul>
                   </div>
             </li>
