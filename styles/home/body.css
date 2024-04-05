@@ -238,7 +238,7 @@ div.title span {
 .layout1,
 .layout2 {
   width: 527px;
-  height: 2000px; /* Độ cao của mỗi layout */
+  height: 3050px; /* Độ cao của mỗi layout */
 }
 
 
@@ -455,3 +455,22 @@ div.title span {
 .right-layout2 .article2 h3:hover {
   color: rgb(9, 137, 176); /* Màu chữ khi hover */
 }
+
+.div-last {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-last a {
+  text-decoration: none;
+  margin-top: 30px;
+  font-weight: 600;
+  padding-left: 7px;
+}
+
+.div-last img {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);;
+  margin-top: 10px;
+}
+
+
