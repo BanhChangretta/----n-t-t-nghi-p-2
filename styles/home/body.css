@@ -474,3 +474,62 @@ div.title span {
 }
 
 
+.hr1 {
+  border: 5px solid green;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.footer {
+  width: 1222px;
+  height: 300px;
+  margin: auto;
+}
+
+.footer-one {
+  list-style: none;
+  width: 530px;
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.footer-one li {
+  font-size: 15px;
+}
+
+.footer-two {
+  list-style: none;
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+
+.footer-two li {
+  font-size: 15px;
+}
+
+label {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.footer-three {
+  width: 300px;
+  height: 200px;
+}
+
+.flex-footer {
+  display: flex;
+}
+
+.footer-three .margin-logo {
+  margin-top: 20px;
+}
+
+.footer-three div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px; /* Khoảng cách giữa các liên kết */
+}
+
