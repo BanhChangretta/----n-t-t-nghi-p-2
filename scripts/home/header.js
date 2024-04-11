@@ -17,13 +17,23 @@ document.addEventListener('DOMContentLoaded', function() {
           // Perform logout actions
       }
   });
+});
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Lấy thông tin vị trí, ngày tháng, nhiệt độ và thời tiết từ API (sử dụng OpenWeatherMap)
+  const apiKey = 'd7373b6ccc231d62d81c1baa8751254f'; // Thay YOUR_API_KEY bằng API key của bạn
+  const city = 'Hanoi';
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=vi`; // Thêm tham số 'lang=vi' để lấy thông tin thời tiết bằng tiếng Việt
 
-  // Giả định lấy nhiệt độ và icon thời tiết từ API
-  const temperature = '25°C';
-  const weatherIcon = 'fas fa-cloud-sun';
-  temperatureElement.textContent = temperature;
-  document.getElementById('weather-icon').innerHTML = `<i class="${weatherIcon}"></i>`;
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      const temperature = data.main.temp;
+      const weatherDescription = data.weather[0].description;
+      const weatherInfoElement = document.getElementById('weather-info');
+      weatherInfoElement.textContent = `${temperature}°C, ${weatherDescription}`;
+    })
+    .catch(error => console.error('Lỗi khi lấy thông tin thời tiết:', error));
 });
 
 

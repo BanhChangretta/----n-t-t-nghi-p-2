@@ -114,9 +114,6 @@ header {
   border-radius: 8px;
 }
 
-.menu .menu-item :hover {
-  background-color: rgb(216, 212, 205);
-}
 
 .divider {
   height: 1px; /* Chiều cao của dòng kẻ */
@@ -162,7 +159,7 @@ header {
   position: absolute;
   top: calc(100% + 13px); /* Thêm khoảng cách giữa menu và submenu */
   left: 0;
-  background-color: #fff;
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Đổ bóng cho submenu */
@@ -195,7 +192,12 @@ header {
 }
 
 .menu-element:hover{
-  background-color: rgb(2, 122, 24) !important;
+  border-left: 3px solid black;
   padding-left: 30px;
+}
+
+.weather {
+  text-align: center;
+  padding-top: 15px;
 }
 
