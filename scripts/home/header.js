@@ -83,3 +83,10 @@ document.addEventListener("DOMContentLoaded", function() {
       passwordToggle.innerHTML = '<i class="fas fa-eye"></i>';
     }
   }
+
+  function closeLoginForm() {
+    var overlay = document.getElementById('overlay');
+    var loginContainer = document.querySelector('.wrapper-login');
+    overlay.style.display = 'none';
+    loginContainer.style.display = 'none';
+  }
