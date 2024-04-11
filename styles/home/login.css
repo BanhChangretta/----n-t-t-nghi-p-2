@@ -1,0 +1,149 @@
+.wrapper-login {
+  position: relative;
+  width: 468px;
+  height: 512px;
+  background-color: white;
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Đảm bảo form đăng nhập hiển thị phía trên cùng */
+  display: none;
+  padding: 25px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ mờ 50% */
+  z-index: 999; /* Đảm bảo overlay hiển thị phía trên cùng */
+  display: none; /* Ẩn ban đầu */
+}
+
+
+.logo-login img {
+  width: 115px;
+}
+
+.logo-login {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-top {
+  width: 250px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login-btn-top {
+  background-color: rgba(0, 128, 0, 0.965);
+  color: white;
+}
+
+.btn-login-register {
+  display: grid;
+  display: flex;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-fb-gg {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-google, 
+.btn-facebook {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-facebook {
+  margin-left: 10px;
+}
+
+.btn-facebook div {
+  margin-left: 8px;
+} 
+
+.btn-google div {
+  margin-left: 8px;
+} 
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.input-box label {
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.input-box input {
+  width: 460px; /* Để lại không gian cho icon */
+  height: 35px;
+  border: 1px solid rgba(0, 0, 0, 0.089);
+
+}
+
+.toggle-password {
+  position: absolute;
+  right: 40px;
+  top: 71.5%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.remember-forgot label input {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.remember-forgot a {
+  padding-left: 180px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.757);
+}
+
+.btn-bottom {
+  margin-top: 30px;
+}
+.btn {
+  width: 460px;
+  height: 50px;
+  background-color: rgba(0, 128, 0, 0.965);
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+}

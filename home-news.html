@@ -8,6 +8,7 @@
     <title>News Website</title>
     <link rel="stylesheet" href="styles/home/header.css">
     <link rel="stylesheet" href="styles/home/body.css">
+    <link rel="stylesheet" href="styles/home/login.css">
 </head>
 <body>
     <header>
@@ -28,6 +29,63 @@
             <button id="login-btn">Đăng nhập</button>
         </div>
     </header>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div class="wrapper-login">
+        <div class="form-box login">
+            <div class="logo-login">
+                <img src="images/c7b827391b2f30b6fbaf.png" alt="">
+            </div>
+
+            <div class="btn-login-register">
+                <button class="login-btn-top btn-top">Đăng nhập</button>
+                <button class="register-btn-top btn-top">Đăng ký</button>
+            </div>
+
+            <div class="text-center">với các tài khoản xã hội</div>
+
+            <div class="btn-fb-gg">
+                <button class="btn-google">
+                    <img src="images/602a5aca41bdeb805571.svg" alt="">
+                    <div>Google</div>
+                </button>
+    
+                <button class="btn-facebook">
+                    <img src="images/05804407650f4479d9ef.svg" alt="">
+                    <div>Facebook</div>
+                </button>
+            </div>
+
+            <div class="or">
+                <span>hoặc</span>
+            </div>
+
+            <form action="#">
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Mật khẩu</label>
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu" required>
+                    <button type="button" class="toggle-password" onclick="togglePasswordVisibility()">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Nhớ mật khẩu</label>
+                    <a href="#">Quên mật khẩu</a>
+                </div>
+
+                <div  class="btn-bottom">
+                    <button type="submit" class="btn">Đăng nhập</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <nav class="center-menu">
         <ul class="menu menu-list" id="menu">

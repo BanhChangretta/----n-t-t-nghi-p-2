@@ -4,18 +4,24 @@ document.addEventListener('DOMContentLoaded', function() {
   var formattedDate = currentDate.toLocaleDateString('vi-VN', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   document.getElementById('current-date').textContent = formattedDate;
 
-  // Example login/logout functionality
-  var isLoggedIn = false;
-  var loginBtn = document.getElementById('login-btn');
-  loginBtn.addEventListener('click', function() {
-      isLoggedIn = !isLoggedIn;
-      if (isLoggedIn) {
-          loginBtn.textContent = "Đăng xuất";
-          // Perform login actions
-      } else {
-          loginBtn.textContent = "Đăng nhập";
-          // Perform logout actions
-      }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const overlay = document.getElementById('overlay');
+  const loginContainer = document.querySelector('.wrapper-login');
+
+  // Xử lý sự kiện khi nhấn nút đăng nhập
+  document.getElementById('login-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+    overlay.style.display = 'block'; // Hiển thị overlay
+    loginContainer.style.display = 'block'; // Hiển thị form đăng nhập
+  });
+
+  // Xử lý sự kiện khi nhấn nút đóng form đăng nhập
+  document.getElementById('closeLoginFormButton').addEventListener('click', function(event) {
+    event.preventDefault();
+    overlay.style.display = 'none'; // Ẩn overlay
+    loginContainer.style.display = 'none'; // Ẩn form đăng nhập
   });
 });
 
@@ -64,3 +70,16 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   });
+
+
+  function togglePasswordVisibility() {
+    var passwordInput = document.getElementById('password');
+    var passwordToggle = document.querySelector('.toggle-password');
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      passwordToggle.innerHTML = '<i class="fas fa-eye-slash"></i>';
+    } else {
+      passwordInput.type = "password";
+      passwordToggle.innerHTML = '<i class="fas fa-eye"></i>';
+    }
+  }
