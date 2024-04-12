@@ -84,9 +84,44 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
+  function togglePasswordVisibilityRegister() {
+    var passwordInput = document.getElementById('password-register');
+    var passwordToggle = document.querySelector('.toggle-password-register');
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      passwordToggle.innerHTML = '<i class="fas fa-eye-slash"></i>';
+    } else {
+      passwordInput.type = "password";
+      passwordToggle.innerHTML = '<i class="fas fa-eye"></i>';
+    }
+  }
+
   function closeLoginForm() {
     var overlay = document.getElementById('overlay');
     var loginContainer = document.querySelector('.wrapper-login');
     overlay.style.display = 'none';
     loginContainer.style.display = 'none';
+  }
+
+
+  function closeLoginFormRegister() {
+    var overlay = document.getElementById('overlay');
+    var registerContainer = document.querySelector('.wrapper-register');
+    overlay.style.display = 'none';
+    registerContainer.style.display = 'none';
+  }
+
+  function toggle(selector) {
+    const button = document.querySelector(selector);
+
+    var loginContainer = document.querySelector('.wrapper-login');
+    var registerContainer = document.querySelector('.wrapper-register');
+  
+    if (button.classList.contains('register-btn-top')) {
+      loginContainer.style.display = 'none';
+      registerContainer.style.display = 'block';
+    } else {
+      loginContainer.style.display = 'block';
+      registerContainer.style.display = 'none';
+    }
   }

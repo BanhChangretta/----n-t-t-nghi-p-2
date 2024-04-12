@@ -43,7 +43,8 @@
 
             <div class="btn-login-register">
                 <button class="login-btn-top btn-top">Đăng nhập</button>
-                <button class="register-btn-top btn-top">Đăng ký</button>
+                <button id="register-btn-top" class="register-btn-top btn-top" onclick="toggle('.register-btn-top');"
+                >Đăng ký</button>
             </div>
 
             <div class="text-center">với các tài khoản xã hội</div>
@@ -85,6 +86,58 @@
 
                 <div  class="btn-bottom">
                     <button type="submit" class="btn">Đăng nhập</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="wrapper-login wrapper-register">
+        <div class="form-box login">
+            
+            <div class="close-button" onclick="closeLoginFormRegister()">X</div>
+
+            <div class="logo-login">
+                <img src="images/c7b827391b2f30b6fbaf.png" alt="">
+            </div>
+
+            <div class="btn-login-register">
+                <button class="btn-top" onclick="toggle('.btn-top');">Đăng nhập</button>
+                <button id="register-btn-top"  class="btn-top btn-register">Đăng ký</button>
+            </div>
+
+            <div class="text-center">
+                <p>
+                    Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!
+                </p>
+            </div>
+
+            <form action="#">
+                <div class="input-box">
+                    <label>Họ và tên</label>
+                    <input type="full-name" placeholder="Họ và tên" required>
+                </div>
+
+
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Mật khẩu</label>
+                    <input type="password" id="password-register" name="password" placeholder="Mật khẩu" required>
+                    <button type="button" class="toggle-password toggle-password-register" onclick="togglePasswordVisibilityRegister()">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+
+                <div class="remember-forgot remember-forgot-register">
+                    <label>Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi</label>
+                    <a href="#">điều kiện về qui định và chính sách của Dân trí</a>
+                </div>
+
+                <div  class="btn-bottom">
+                    <button type="submit" class="btn">Đăng ký</button>
                 </div>
             </form>
         </div>
